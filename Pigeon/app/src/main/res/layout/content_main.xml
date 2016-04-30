@@ -17,6 +17,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Select a destination:"/>
+    
+
     <Spinner
         android:id = "@+id/spn_locations"
         android:layout_width="match_parent"
@@ -25,10 +27,26 @@
         android:prompt="@string/prompt_locations">
     </Spinner>
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/staticmap"/>
+
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text = "Select Time"
         android:id="@+id/btn_time_picker"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "Start Journey"
+        android:id="@+id/btn_start_journey"
+        android:layout_marginTop="20dp"
+        android:padding="40dp"
+        android:enabled="false"
+        android:layout_gravity="center_horizontal|clip_horizontal"/>
 
 </LinearLayout>
